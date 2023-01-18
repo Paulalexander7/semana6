@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="semana6.Registro">
+    <ContentPage.Content>
+        <StackLayout>
+        <Label Text="Ventana de registro" />
+        <Entry x:Name="txtId" Placeholder="Id" Keyboard="Numeric"/>
+        <Entry x:Name="txtNombre" Placeholder="Nombre"/>
+        <Entry x:Name="txtApellido" Placeholder="Apellido"/>
+        <Entry x:Name="txtEdad" Placeholder="edad" Keyboard="Numeric"/>
+
+            <Grid>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+
+                </Grid.ColumnDefinitions>
+                <Button Grid.Row="0" Grid.Column="0" Text="Insertar"
+                        x:Name="btnIngresar"
+                        Clicked="btnIngresar_Clicked">
+                </Button>
+                <Button Grid.Row="0" Grid.Column="1" Text="Regresar"
+                        x:Name="btnRegresar"
+                        Clicked="btnRngresar_Clicked">
+                        </Button>
+
+            </Grid>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+    
+</ContentPage>
